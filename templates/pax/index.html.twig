@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% form_theme formPersonne 'bootstrap_4_layout.html.twig' %}
+
+
+
+{% block body %}
+
+   {{ form_start(formPersonne)}}
+   
+    {{ form_row(formPersonne.age)}}
+ 
+    <button type="submit" class="btn btn-success"> Ajouter la groupe </button>
+
+    {{ form_end(formPersonne)}}
+{% endblock %}

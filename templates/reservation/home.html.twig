@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+{% form_theme formGroup 'bootstrap_4_layout.html.twig' %}
+
+
+{% block body %}
+
+   {{ form_start(formGroup)}}
+   {{ form_row(formGroup.nombrep, {'attr' :{'placeholder':"nombre de personnes"}})}}
+   <label for="chambre">type de chambre:</label>
+
+<select name="type chambre" id="chambre">
+    <option value="">--type chambre--</option>
+    <option value="">3pax</option>
+    <option value="">2pax</option>
+    <option value="">1pax</option>
+    
+</select>
+</br>
+<button type="submit" class="btn btn-success"> Continuer </button>
+   {{ form_end(formGroup)}}
+
+
+  
+    {% endblock %}
